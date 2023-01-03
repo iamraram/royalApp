@@ -21,13 +21,13 @@ class MenuActivity : AppCompatActivity() {
 
         val btn2 = binding.button2
         btn2.setOnClickListener {
-            val intent = Intent(this, FirstActivity::class.java)
+            val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }
 
         val btn3 = binding.button3
         btn3.setOnClickListener {
-            val intent = Intent(this, FirstActivity::class.java)
+            val intent = Intent(this, ThirdActivity::class.java)
             startActivity(intent)
         }
     }

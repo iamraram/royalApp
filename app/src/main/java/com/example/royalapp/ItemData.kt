@@ -6,5 +6,5 @@ data class ItemData (
     val firstTeam: String,
     val secondTeam: String,
     val odds: String,
-    val result: String,
+    val result: String
 )

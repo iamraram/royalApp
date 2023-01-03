@@ -29,10 +29,17 @@ class FirstActivity : AppCompatActivity() {
         path.get()
             .addOnSuccessListener { document ->
                 if (document != null) {
-                    for (i in 0 until document.data!!.size) {
-                        val data: List<String> = document.data!![i.toString()] as List<String>
-                        Log.d("apple", document.data!![i.toString()].toString())
-                        recyclerViewItems.add(ItemData(data[0], data[1], data[2], data[3], data[4], data[5]))
+                    for (i in 0 until 10000) {
+                        try {
+                            val data: List<String> = document.data!![i.toString()] as List<String>
+                            Log.d("apple", document.data!![i.toString()].toString())
+                            if (data.toString() != "deleted") {
+                                recyclerViewItems.add(ItemData(data[0], data[1], data[2], data[3], data[4], data[5]))
+                            }
+                        }
+                        catch (e: Exception) {
+                            continue
+                        }
                     }
                     recyclerViewAdapter.notifyDataSetChanged()
                 }

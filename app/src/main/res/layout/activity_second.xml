@@ -27,7 +27,7 @@
         android:textSize="22sp"
         android:layout_marginStart="18dp"
         android:textColor="@color/black"
-        android:text="Daily Free Tips" />
+        android:text="3++ Odds" />
 
     <ImageView
         android:id="@+id/king_logo"
@@ -37,17 +37,17 @@
         app:layout_constraintTop_toBottomOf="@id/title_tab"
         android:layout_marginTop="50dp" />
 
-    <!--    <androidx.recyclerview.widget.RecyclerView-->
-    <!--        android:id="@+id/musicRecyclerView"-->
-    <!--        tools:listitem="@layout/item"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintRight_toRightOf="parent"-->
-    <!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/king_logo"-->
-    <!--        android:layout_marginTop="26dp"-->
-    <!--        />-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/musicRecyclerView"
+            tools:listitem="@layout/item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/king_logo"
+            android:layout_marginTop="26dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
