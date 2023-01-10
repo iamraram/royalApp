@@ -1,15 +1,12 @@
 package com.example.royalapp
 
-import android.R.attr.targetId
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -43,6 +40,9 @@ class EditViewAdapter(private val recyclerViewItems : ArrayList<ItemData2>):
 
         @SuppressLint("SetTextI18n")
         fun bind(ItemData: ItemData2, i: Int) {
+            if (i == recyclerViewItems.size - 1) {
+                info.setPadding(0, 0, 0, 150)
+            }
             itemView.setOnClickListener {
                 Log.d("TAG", "dede: ${i}")
                 var path: String = ""

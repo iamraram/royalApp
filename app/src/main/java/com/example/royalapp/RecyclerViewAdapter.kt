@@ -33,9 +33,11 @@ class RecyclerViewAdapter(private val recyclerViewItems : ArrayList<ItemData>):
         private val odds: TextView = itemView.findViewById(R.id.conclude)
         private val result: TextView = itemView.findViewById(R.id.conclude2)
 
-
         @SuppressLint("SetTextI18n")
         fun bind(ItemData: ItemData, i: Int) {
+            if (i == recyclerViewItems.size - 1) {
+                odds.setPadding(0, 0, 0, 120)
+            }
             Log.d("TAG", "bind: $i")
             date.text = ItemData.date + "   /"
             leagueName.text = ItemData.league

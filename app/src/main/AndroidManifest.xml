@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RoyalApp"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2426272595059032~8908788087"/>
         <activity
             android:name=".AddActivity"
             android:windowSoftInputMode="adjustResize"

@@ -1,13 +1,12 @@
 package com.example.royalapp
 
 import android.annotation.SuppressLint
-
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import com.example.royalapp.databinding.ActivitySecondBinding
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
+import com.example.royalapp.databinding.ActivitySecondBinding
 import com.google.firebase.firestore.FirebaseFirestore
+import java.util.*
 
 @Suppress("UNCHECKED_CAST")
 class SecondActivity : AppCompatActivity() {
@@ -23,7 +22,16 @@ class SecondActivity : AppCompatActivity() {
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Log.d("apple", "DocumentSnapshot")
+//        rewardedAd = RewardedAd(this, adTestId)
+//        val adLoadCallback = object: RewardedAdLoadCallback() {
+//            override fun onRewardedAdLoaded() {
+//                // Ad successfully loaded.
+//            }
+//            override fun onRewardedAdFailedToLoad(adError: LoadAdError) {
+//                // Ad failed to load.
+//            }
+//        }
+//        rewardedAd.loadAd(AdRequest.Builder().build(), adLoadCallback)
 
         val path = db.collection("adv").document("data")
         path.get()
