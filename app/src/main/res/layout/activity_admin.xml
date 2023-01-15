@@ -5,7 +5,7 @@
     android:background="@drawable/grad"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminActivity">
+    tools:context="com.royal.royalapp.AdminActivity">
 
     <ImageView
         android:id="@+id/back_button"

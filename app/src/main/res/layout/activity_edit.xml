@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/grad"
     android:layout_height="match_parent"
-    tools:context=".EditActivity">
+    tools:context="com.royal.royalapp.EditActivity">
 
     <ImageView
         android:id="@+id/back_button"

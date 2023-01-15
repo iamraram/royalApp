@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:descendantFocusability="blocksDescendants"
     android:background="@drawable/grad"
-    tools:context=".FirstActivity">
+    tools:context="com.royal.royalapp.FirstActivity">
 
     <ImageView
         android:id="@+id/back_button"

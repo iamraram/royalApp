@@ -19,7 +19,7 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-2426272595059032~8908788087"/>
         <activity
-            android:name=".AddActivity"
+            android:name="com.royal.royalapp.AddActivity"
             android:windowSoftInputMode="adjustResize"
             android:exported="false">
             <meta-data
@@ -27,14 +27,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".EditActivity"
+            android:name="com.royal.royalapp.EditActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ChangeActivity"
+            android:name="com.royal.royalapp.ChangeActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize">
             <meta-data
@@ -42,7 +42,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".AdminActivity"
+            android:name="com.royal.royalapp.AdminActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize">
             <meta-data
@@ -50,35 +50,35 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SecondActivity"
+            android:name="com.royal.royalapp.SecondActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ThirdActivity"
+            android:name="com.royal.royalapp.ThirdActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".FirstActivity"
+            android:name="com.royal.royalapp.FirstActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MenuActivity"
+            android:name="com.royal.royalapp.MenuActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.royal.royalapp.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
